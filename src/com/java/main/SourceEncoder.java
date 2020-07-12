@@ -25,7 +25,6 @@ import javax.swing.JTextField;
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 
-import org.apache.poi.EncryptedDocumentException;
 
 import com.java.main.service.Decryption;
 import com.java.main.service.Encryption;
@@ -226,6 +225,10 @@ public class SourceEncoder extends JFrame{
 		setLocationRelativeTo(null);
 	}
 
+	/**
+	 * Main function to start the pplication
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		try {
 			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
