@@ -1,15 +1,12 @@
 package com.java.main.service;
 
+import javax.swing.*;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
-
-import javax.swing.JOptionPane;
-
-import com.java.main.service.model.FileInfo;
 
 public class Encryption {
 

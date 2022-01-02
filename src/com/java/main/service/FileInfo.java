@@ -1,4 +1,4 @@
-package com.java.main.service.model;
+package com.java.main.service;
 
 import java.awt.HeadlessException;
 import java.util.Arrays;

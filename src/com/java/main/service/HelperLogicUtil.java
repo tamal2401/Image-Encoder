@@ -1,7 +1,7 @@
 package com.java.main.service;
 
-import java.io.File;
-import java.io.UnsupportedEncodingException;
+import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
@@ -98,16 +98,13 @@ public class HelperLogicUtil {
 	 * Base64 Encoding logic from image file to string
 	 */
 	protected static String encodeImage(byte[] imageData) {
-		return org.apache.commons.codec.binary.Base64.encodeBase64URLSafeString(imageData);
+		return Base64.getEncoder().encodeToString(imageData);
 	}
 	
 	/*
 	 * Base64 Decoding logic from String to image
 	 */
 	protected static byte[] decodeImage(String imageDataString) {
-		return org.apache.commons.codec.binary.Base64.decodeBase64(imageDataString);
+		return Base64.getDecoder().decode(imageDataString);
 	}
-	
-	
-	
 }

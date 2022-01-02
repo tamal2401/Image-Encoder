@@ -10,8 +10,6 @@ import java.util.stream.Collectors;
 
 import javax.swing.JOptionPane;
 
-import com.java.main.service.model.FileInfo;
-
 public class Decryption {
 
 	private String filePath;

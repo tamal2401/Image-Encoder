@@ -1,33 +1,15 @@
 package com.java.main;
 
-import java.awt.Font;
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
-import java.awt.Insets;
+import com.java.main.service.Decryption;
+import com.java.main.service.Encryption;
+
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.io.File;
-
-import javax.swing.BorderFactory;
-import javax.swing.JButton;
-import javax.swing.JComboBox;
-import javax.swing.JFileChooser;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JMenu;
-import javax.swing.JMenuBar;
-import javax.swing.JMenuItem;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.JTextField;
-import javax.swing.SwingUtilities;
-import javax.swing.UIManager;
-
-
-import com.java.main.service.Decryption;
-import com.java.main.service.Encryption;
 
 public class SourceEncoder extends JFrame{
 
@@ -101,8 +83,8 @@ public class SourceEncoder extends JFrame{
 		constraintProgress.insets = new Insets(10, 10, 10, 10);
 
 		final JLabel labelProgress = new JLabel("Processing File...Please Wait");
-		Font boldProgress = new Font("SansSerif", Font.BOLD, 18);
-		labelProgress.setFont(boldProgress);
+		Font boldProgress = new Font("SansSerif", java.awt.Font.BOLD, 18);
+		labelProgress.setFont((java.awt.Font) boldProgress);
 		constraintProgress.gridx = 0;
 		constraintProgress.gridy = 1;
 		progress.add(labelProgress, constraintProgress);
